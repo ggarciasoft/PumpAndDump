@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\data.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive.Linq" Version="5.0.0" />
+    <PackageReference Include="Websocket.Client" Version="4.3.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PumpAndDump.Shared\PumpAndDump.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
